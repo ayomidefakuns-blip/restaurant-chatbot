@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Tasty Bites — Restaurant ChatBot</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- ── Header ─────────────────────────────────────────── -->
+    <header class="chat-header">
+      <div class="bot-avatar" aria-hidden="true">🍽️</div>
+      <div class="bot-info">
+        <h1>Tasty Bites</h1>
+        <span class="status" id="statusText">● Connecting…</span>
+      </div>
+    </header>
+
+    <!-- ── Chat messages ──────────────────────────────────── -->
+    <main class="chat-body" id="chatBody" role="log" aria-live="polite"></main>
+
+    <!-- ── Input area ─────────────────────────────────────── -->
+    <footer class="chat-footer">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Type a number (e.g. 1) or email…"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+        inputmode="text"
+        aria-label="Type your message"
+      />
+      <button id="sendBtn" aria-label="Send message" title="Send">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </footer>
+
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
